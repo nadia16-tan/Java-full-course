@@ -13,9 +13,9 @@ In this module, you will:
 ---
 
 ## 🎥 Video Sections
-first
+first: 
 https://youtu.be/c13XxZgUVj0
-second
+second: 
 https://youtu.be/MshSvgwBmU4
 
 ### ⏱ Watch:
