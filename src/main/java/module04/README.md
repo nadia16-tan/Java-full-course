@@ -2,66 +2,83 @@
 
 ---
 
-## Learning Outcomes Assessed
+## 🎯 Learning Objectives
 
-* Method Design
-* Parameters & Arguments
-* Return Values
-* Reusable Logic
-* Problem Decomposition
-* Function-Based Problem Solving
+In this module, you will:
+
+- Understand how to define and use methods in Java
+- Work with parameters and return values
+- Break larger problems into smaller reusable pieces
+- Write cleaner, more structured code
+- Build reusable logic for scalable programs
+- Strengthen problem-solving through function design
 
 ---
 
-## Module Structure
+## 🎥 Video Learning Resource
+
+https://youtu.be/xTtL8E4LzTQ
+
+### ⏱ Watch This Section Only:
+
+- **00:04:04 → 00:04:19** → Methods / Functions
+
+👉 Watch → Pause → Code → Test
+
+---
+
+# 📚 Learning Outcomes Assessed
+
+- Method Design
+- Parameters & Arguments
+- Return Values
+- Reusable Logic
+- Problem Decomposition
+- Function-Based Problem Solving
+- Code Organization
+- Java Syntax Accuracy
+
+---
+
+# 🛠 Module Structure
 
 This module contains:
 
 ### Coding Practice:
 
-All questions must be completed inside:
+Complete all functions inside:
 
-```java id="t4g2mc"
+```java
 MethodExercises.java
 ```
 
-Your task is to:
+---
 
-* Read each function carefully
-* Fully understand what problem each method is solving
-* Break each problem into reusable logic
-* Implement each method correctly
-* Return exact expected values
-* Handle edge cases properly
-* Pass all tests successfully
+# ✅ What You Must Do
+
+For this module, you must:
+
+- Understand what each method is solving
+- Use parameters correctly
+- Return exact expected values
+- Break problems into reusable logic
+- Handle unusual or boundary inputs
+- Follow proper Java syntax
+- Pass all unit tests successfully
 
 ---
 
-## Your Goal
-
-For each function:
-
-* Use valid Java syntax
-* Write clean reusable methods
-* Use parameters correctly
-* Return proper values
-* Handle unusual or boundary inputs
-* Follow exact expected outputs
-* Ensure all unit tests pass
-
----
-
-## How to Run Your Tests
+# 🧪 How to Run Your Tests
 
 ### Run all tests:
 
-```bash id="aj6d8k"
+```bash
 mvn test
 ```
 
-### Run module tests:
+### Run only this module’s tests:
 
-```bash id="q1n8ve"
+```bash
 mvn test -Dtest=MethodExercisesTest
 ```
 
@@ -71,13 +88,18 @@ mvn test -Dtest=MethodExercisesTest
 
 ---
 
-## What is a Method?
+## 🔹 What is a Method?
 
-A method is a reusable block of code designed to perform one specific task whenever it is called.
+A method is a reusable block of code designed to perform one specific task.
 
-Instead of rewriting the same logic repeatedly, developers create methods once and reuse them whenever needed.
+Instead of repeating logic multiple times:
 
-```java id="5rua3s"
+- Write once ✅
+- Reuse anywhere ✅
+
+### Example:
+
+```java
 public static int add(int a, int b) {
     return a + b;
 }
@@ -85,325 +107,281 @@ public static int add(int a, int b) {
 
 ---
 
-## Method Structure
+## 🔹 Method Structure
 
-```java id="y0e8zp"
+```java
 returnType methodName(parameters)
 ```
 
 ### Example:
 
-```java id="yo6w2j"
+```java
 public static boolean isEven(int number)
 ```
 
 ---
 
-## Return vs `void`
+## 🔹 Return vs `void`
 
 ### `return`
 
-Returns a value back to whoever called the method.
+Returns a value back to the caller.
 
 ### `void`
 
-Executes instructions without returning data.
+Performs actions but returns nothing.
 
 ---
 
-## Why Methods Matter
+## 🔹 Why Methods Matter
 
 Methods help developers:
 
-* Reuse code efficiently
-* Avoid duplication
-* Improve readability
-* Simplify debugging
-* Build scalable software
-* Organize programs into manageable pieces
+- Reuse code
+- Avoid duplication
+- Improve readability
+- Simplify debugging
+- Build scalable applications
+- Organize software effectively
 
 ---
 
-# 🧪 Fundamentals Coding Practice
+# 🧪 Exercises
 
 ---
 
-## Project Structure
-
-```plaintext id="4rvxk9"
-module04/
-├── MethodExercises.java
-├── tests/
-│   └── MethodExercisesTest.java
-└── README.md
-```
-
----
-
-# Question 1 - CheckEven
+# 🧩 Question 1 - CheckEven
 
 ## Function:
 
-```java id="ix4w9s"
+```java
 exercise1_checkEven(int num)
 ```
 
-### Detailed Objective:
+---
 
-Create a method that determines whether a given integer is evenly divisible by 2.
+### Objective:
 
-This function should evaluate the provided number and return a boolean value indicating whether the number is even.
-
-A number is considered even if dividing it by 2 leaves no remainder.
+Determine whether a number is even.
 
 ---
 
 ### Rules:
 
-* Return `true` if the number is even
-* Return `false` if the number is odd
+- Return `true` if divisible by 2
+- Otherwise return `false`
 
 ---
 
 ### Input:
 
-* Integer `num`
+- `int num`
 
 ---
 
 ### Output:
 
-* Boolean value:
-
-  * `true`
-  * `false`
+- `boolean`
 
 ---
 
 ### Examples:
 
 | Input | Output |
-| ----- | ------ |
-| 4     | true   |
-| 7     | false  |
-| 0     | true   |
-| -8    | true   |
+|------|--------|
+| `4` | `true` |
+| `7` | `false` |
+| `0` | `true` |
+| `-8` | `true` |
 
 ---
 
 ### Edge Cases:
 
-* Zero is even
-* Negative numbers may also be even
-* Large numbers should still evaluate correctly
+- Zero is even
+- Negative values may be even
+- Large values
 
 ---
 
-# Question 2 - GreetUser
+# 🧩 Question 2 - GreetUser
 
 ## Function:
 
-```java id="3ujf9h"
+```java
 exercise2_greetUser(String name)
 ```
 
-### Detailed Objective:
+---
 
-Create a method that accepts a user's name and returns a personalized greeting message.
+### Objective:
 
-The greeting must include the exact provided name inserted into the correct sentence structure.
-
-This exercise focuses on working with method parameters and string construction.
+Return a personalized greeting.
 
 ---
 
 ### Rules:
 
-* Return:
+Return:
 
-```java id="8g4w1l"
+```java
 "Hello, name!"
 ```
 
-* Replace `name` with the actual input
-
 ---
 
 ### Input:
 
-* String `name`
+- `String name`
 
 ---
 
 ### Output:
 
-* Formatted greeting string
+- `String`
 
 ---
 
 ### Examples:
 
-| Input   | Output          |
-| ------- | --------------- |
-| "John"  | "Hello, John!"  |
-| "Sarah" | "Hello, Sarah!" |
-| "Ben"   | "Hello, Ben!"   |
+| Input | Output |
+|------|--------|
+| `"John"` | `"Hello, John!"` |
+| `"Sarah"` | `"Hello, Sarah!"` |
+| `"Ben"` | `"Hello, Ben!"` |
 
 ---
 
 ### Edge Cases:
 
-* Empty strings
-* Single-character names
-* Proper punctuation must always be included
+- Empty string
+- Single-character names
+- Proper punctuation required
 
 ---
 
-# Question 3 - CalculateSum
+# 🧩 Question 3 - CalculateSum
 
 ## Function:
 
-```java id="9m2q7t"
+```java
 exercise3_calculateSum(int a, int b)
 ```
 
-### Detailed Objective:
+---
 
-Create a method that accepts two integers and returns their mathematical sum.
+### Objective:
 
-This exercise teaches how methods process multiple parameters and return calculated values.
-
-The method should simply add both numbers together and return the result.
+Return the sum of two integers.
 
 ---
 
 ### Rules:
 
-* Return `a + b`
+- Return `a + b`
 
 ---
 
-### Input:
+### Inputs:
 
-* Integer `a`
-* Integer `b`
+- `int a`
+- `int b`
 
 ---
 
 ### Output:
 
-* Integer sum
+- `int`
 
 ---
 
 ### Examples:
 
-| Input  | Output |
-| ------ | ------ |
-| 5, 3   | 8      |
-| -2, 4  | 2      |
-| 0, 0   | 0      |
-| -5, -5 | -10    |
+| Input | Output |
+|------|--------|
+| `5, 3` | `8` |
+| `-2, 4` | `2` |
+| `0, 0` | `0` |
+| `-5, -5` | `-10` |
 
 ---
 
 ### Edge Cases:
 
-* Negative numbers
-* Zero values
-* Large positive values
-* Large negative values
+- Negative values
+- Zero
+- Large numbers
 
 ---
 
-# Question 4 - FindMax
+# 🧩 Question 4 - FindMax
 
 ## Function:
 
-```java id="p6e8tx"
+```java
 exercise4_findMax(int a, int b)
 ```
 
-### Detailed Objective:
+---
 
-Create a method that compares two integers and returns the larger value.
+### Objective:
 
-This exercise focuses on decision-making within reusable methods.
-
-The method should determine which value is greater and return it.
-
-If both values are equal, returning either is acceptable.
+Return the larger of two numbers.
 
 ---
 
 ### Rules:
 
-* Return the larger number
-* If equal, return either number
+- Return larger number
+- If equal, return either
 
 ---
 
-### Input:
+### Inputs:
 
-* Integer `a`
-* Integer `b`
+- `int a`
+- `int b`
 
 ---
 
 ### Output:
 
-* Integer maximum value
+- `int`
 
 ---
 
 ### Examples:
 
-| Input  | Output |
-| ------ | ------ |
-| 5, 3   | 5      |
-| 2, 8   | 8      |
-| 7, 7   | 7      |
-| -3, -1 | -1     |
+| Input | Output |
+|------|--------|
+| `5, 3` | `5` |
+| `2, 8` | `8` |
+| `7, 7` | `7` |
+| `-3, -1` | `-1` |
 
 ---
 
 ### Edge Cases:
 
-* Equal values
-* Negative comparisons
-* Zero comparisons
+- Equal values
+- Negative comparisons
+- Zero
 
 ---
 
-# Question 5 - IsPrime
+# 🧩 Question 5 - IsPrime
 
 ## Function:
 
-```java id="5xv0ae"
+```java
 exercise5_isPrime(int num)
 ```
 
-### Detailed Objective:
-
-Create a method that determines whether a given number is prime.
-
-A prime number is a number greater than 1 that can only be divided evenly by:
-
-* 1
-* Itself
-
-This means prime numbers have exactly two divisors.
-
-Your method must check whether the number meets this mathematical requirement.
-
-This exercise introduces more advanced logical validation and may require loops for divisor checking.
-
 ---
 
-### Rules:
+### Objective:
 
-* Return `true` if the number is prime
-* Return `false` otherwise
+Determine whether a number is prime.
 
 ---
 
@@ -411,65 +389,72 @@ This exercise introduces more advanced logical validation and may require loops 
 
 A prime number:
 
-* Must be greater than 1
-* Cannot have additional divisors
+- Must be greater than `1`
+- Divisible only by:
+  - `1`
+  - Itself
 
 ---
 
-### Important Rules:
+### Rules:
 
-* `0` is NOT prime
-* `1` is NOT prime
-* Negative numbers are NOT prime
+- Return `true` if prime
+- Return `false` otherwise
+
+---
+
+### Important Notes:
+
+- `0` is NOT prime
+- `1` is NOT prime
+- Negative numbers are NOT prime
 
 ---
 
 ### Input:
 
-* Integer `num`
+- `int num`
 
 ---
 
 ### Output:
 
-* Boolean value:
-
-  * `true`
-  * `false`
+- `boolean`
 
 ---
 
 ### Examples:
 
 | Input | Output |
-| ----- | ------ |
-| 2     | true   |
-| 7     | true   |
-| 9     | false  |
-| 1     | false  |
-| -5    | false  |
+|------|--------|
+| `2` | `true` |
+| `7` | `true` |
+| `9` | `false` |
+| `1` | `false` |
+| `-5` | `false` |
 
 ---
 
 ### Edge Cases:
 
-* 0
-* 1
-* Negative values
-* Large prime numbers
-* Large composite numbers
+- `0`
+- `1`
+- Negative values
+- Large primes
+- Large composites
 
 ---
 
 # 💡 Key Developer Tips
 
-* Keep methods focused on one task
-* Use descriptive logic
-* Return precise outputs
-* Reuse methods whenever possible
-* Validate unusual inputs
-* Prime checking usually requires loops
-* Always test boundary cases
+- Keep methods focused on one task
+- Use clear return logic
+- Validate unusual inputs
+- Reuse logic whenever possible
+- Prime checking usually requires loops
+- Always test boundary conditions
+- Practice writing clean signatures
+- Ensure exact output formatting
 
 ---
 
@@ -477,19 +462,26 @@ A prime number:
 
 By completing this module, you should:
 
-* Understand how methods work deeply
-* Build reusable programming logic
-* Break large problems into smaller tasks
-* Improve software structure
-* Write cleaner code
-* Prepare for object-oriented programming
+- Understand how methods work deeply
+- Build reusable programming logic
+- Structure software more effectively
+- Break larger problems into smaller components
+- Write cleaner, maintainable Java code
+- Prepare for advanced object-oriented programming
 
 ---
 
 # 🏆 Success Mindset
 
-Methods are foundational to professional software development.
+Methods are one of the core foundations of software engineering.
 
-Every major application relies on reusable functions to remain scalable, readable, and maintainable.
+They power:
 
-Master methods thoroughly before progressing.
+- APIs
+- Automation systems
+- Backend architectures
+- Game systems
+- Data pipelines
+- Enterprise applications
+
+Master methods thoroughly — reusable logic is essential for professional development.
